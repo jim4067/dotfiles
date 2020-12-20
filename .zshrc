@@ -1,3 +1,4 @@
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -122,3 +123,4 @@ source $ZSH/oh-my-zsh.sh
 
 
 export PATH="$PATH:/opt/netbeans/bin/"
+export PATH="$PATH:/home/jim_4067/.cargo/bin"
