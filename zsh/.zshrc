@@ -1,4 +1,3 @@
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -9,7 +8,10 @@ export ZSH="/home/jim_4067/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+# ZSH_THEME="powerlevel9k/powerlevel9k"
+
+ZSH_THEME="fox"
+
 
 POWERLEVEL9K_MODE="nerdfont-complete"
 
@@ -124,3 +126,5 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:/opt/netbeans/bin/"
 export PATH="$PATH:/home/jim_4067/.cargo/bin"
+export PATH="$PATH:/home/jim_4067/.bin/exercism"
+export BAT_PAGER=""
