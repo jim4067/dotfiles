@@ -123,8 +123,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Set LS_COLORS environment by Deepin
+if [[ ("$TERM" = *256color || "$TERM" = screen* || "$TERM" = xterm* ) && -f /etc/lscolor-256color ]]; then
+    eval $(dircolors -b /etc/lscolor-256color)
+else
+    eval $(dircolors)
+fi
 
-export PATH="$PATH:/opt/netbeans/bin/"
-export PATH="$PATH:/home/jim_4067/.cargo/bin"
-export PATH="$PATH:/home/jim_4067/.bin/exercism"
-export BAT_PAGER=""
+#EXPORTING MY PATHS
+export PATH="$PATH:/opt/netbeans/bin/" #for rust
+export PATH="$PATH:/home/jim_4067/.cargo/bin" #for rust
+export PATH="$PATH:/home/jim_4067/.bin/exercism" #for exercism
+export PATH="$PATH:/home/jim_4067/.local/bin" #for glances
+export BAT_PAGER="" #completely removes the pager for bat
