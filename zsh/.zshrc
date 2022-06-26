@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/jim_4067/.oh-my-zsh"
+export ZSH="/home/jimii/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -11,24 +11,6 @@ export ZSH="/home/jim_4067/.oh-my-zsh"
 # ZSH_THEME="powerlevel9k/powerlevel9k"
 
 ZSH_THEME="fox"
-
-
-POWERLEVEL9K_MODE="nerdfont-complete"
-
-POWERLEVEL9K_DISABLE_PROMPT=true
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="▶ "
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
-
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_telescope_icon dir vcs)
-POWERLEVEL9K_CUSTOM_TELESCOPE_ICON="echo '\uE209'"
-POWERLEVEL9K_CUSTOM_TELESCOPE_ICON_BACKGROUND=069
-POWERLEVEL9K_CUSTOM_TELESCOPE_ICON_FOREGROUND=015
-
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(custom_ghost_icon ram)
-POWERLEVEL9K_CUSTOM_GHOST_ICON="echo '\uE007'"
-POWERLEVEL9K_CUSTOM_GHOST_ICON_BACKGROUND=069
-POWERLEVEL9K_CUSTOM_GHOST_ICON_FOREGROUND=015
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -89,8 +71,6 @@ POWERLEVEL9K_CUSTOM_GHOST_ICON_FOREGROUND=015
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
- git
- dnf
  zsh-syntax-highlighting
  zsh-autosuggestions
  )
@@ -131,8 +111,11 @@ else
 fi
 
 #EXPORTING MY PATHS
-export PATH="$PATH:/opt/netbeans/bin/" #for rust
-export PATH="$PATH:/home/jim_4067/.cargo/bin" #for rust
-export PATH="$PATH:/home/jim_4067/.bin/exercism" #for exercism
-export PATH="$PATH:/home/jim_4067/.local/bin" #for glances
-export BAT_PAGER="" #completely removes the pager for bat
+PATH="/home/jimii/.local/share/solana/install/active_release/bin:$PATH"
+export BAT_PAGER=""
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completionsource /home/jimii/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
